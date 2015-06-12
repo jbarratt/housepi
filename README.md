@@ -16,7 +16,6 @@ For a first pass, I'm running smokeping. It can be accessed at http://(rpi)/cgi-
 
 ## To Do
 
-* Set up mdns so I don't have to hard-code the pi's name/address
 * Set time zone to local (not UTC)
 * Switch to another monitoring system that does rendering in-browser and can track other things. (Grafana?)
 * traffic counters from network devices
