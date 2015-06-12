@@ -1,0 +1,63 @@
+*** Targets ***
+
+probe = FPing
+
+menu = Top
+title = Raspberry Pi Internet Access Monitor
+remark = Latency to a few select sites and services in the Internet.
+
++ Internet
+menu = Internet
+title = Internet Access (Ping)
+
+++ Google
+title = Google
+menu = Google
+host = www.google.com
+
+++ FB
+title = Facebook
+menu = Facebook
+host = www.facebook.com
+
+++ Serialized
+title = Serialized
+menu = Serialized
+host = serialized.net
+
++ DNS
+menu = DNS
+title = Name Servers
+
+++ gdns
+title = Google public DNS
+menu = Google public DNS
+probe = EchoPingDNS
+dns_request = www.google.com
+host = 8.8.8.8
+
+++ lan
+title = LAN DNS
+menu = LAN DNS
+probe = EchoPingDNS
+dns_request = www.google.com
+host = 10.0.1.1
+
+++ comcast
+title = Cablecom DNS
+menu = Cablecom
+probe = EchoPingDNS
+dns_request = www.google.com
+host = 75.75.75.75
+
++ Cloud
+menu = Cloud
+title = Cloud Services
+
+++ serialized
+title = Serialized
+menu = Serialized
+probe = EchoPingHttp
+host = serialized.net
+port = 80 
+url = /favicon.ico

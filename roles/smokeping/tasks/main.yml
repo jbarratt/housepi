@@ -1,0 +1,17 @@
+---
+
+- name: "Install smokeping"
+  apt: name=smokeping state=installed
+
+- name: "Install configuration files"
+  copy: src={{ item }} dest=/etc/smokeping/config.d/{{ item }}
+  notify:
+    - restart smokeping
+    - restart apache
+  with_items:
+    - General
+    - Probes
+    - Targets
+    - pathnames
+
+
