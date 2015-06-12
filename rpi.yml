@@ -6,5 +6,6 @@
   pre_tasks:
     - hostname: name=rpi
   roles:
+    - {role: knopki.timezone, timezone: "America/Los_Angeles"}
     - pwelch.avahi
     - smokeping
