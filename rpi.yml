@@ -3,5 +3,8 @@
 - hosts: all
   sudo: yes
   user: pi
+  pre_tasks:
+    - hostname: name=rpi
   roles:
+    - pwelch.avahi
     - smokeping
