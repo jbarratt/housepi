@@ -25,6 +25,19 @@ title = Serialized
 menu = Serialized
 host = serialized.net
 
+++ Banksy
+title = Banksy
+menu = Banksy
+host = banksy.local.
+
+++ Airport
+title = USG
+host = 192.168.1.1
+
+++ Cablemodem
+title = Cablemodem
+host = 192.168.100.1
+
 + DNS
 menu = DNS
 title = Name Servers
@@ -44,8 +57,8 @@ dns_request = www.google.com
 host = 10.0.1.1
 
 ++ comcast
-title = Cablecom DNS
-menu = Cablecom
+title = Comcast DNS
+menu = Comcast
 probe = EchoPingDNS
 dns_request = www.google.com
 host = 75.75.75.75
